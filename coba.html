@@ -1,0 +1,29 @@
+<HTML>
+<head>
+<meta charset='utf-8'/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'/>
+<link href='https://cdn.rawgit.com/Arleth98/blog-orang/171548a8/flickity.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.rawgit.com/Arleth98/blog-orang/171548a8/flickity.pkgd.min.js' type='text/javascript'/>
+<script src='https://cdn.rawgit.com/Arleth98/blog-orang/fced48d0/random-post-slider-for-blogger.js' type='text/javascript'/>
+<style type='text/css'>
+/* Slider Random Post
+  ======================================= */
+#random-post-container{overflow:hidden;height:225px;padding:10px;}
+#random-post-container .carousel-cell{width:13.3%;height:180px;margin-right:10px;background:#444;counter-increment:carousel-cell}
+#random-post-container img {width:130px;height:180px;}
+#random-post-container h2 a{position:absolute;bottom:0;left:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px;padding:5px;color:#FFF;font-weight:400;font-size:12px;background:-webkit-linear-gradient(top,rgba(0,0,0,.05) 6%,rgba(0,0,0,.85) 70%);background:-o-linear-gradient(top,rgba(0,0,0,.05) 6%,rgba(0,0,0,.85) 70%);background:linear-gradient(to bottom,rgba(0,0,0,.05) 6%,rgba(0,0,0,.85) 70%);text-shadow:rgba(0,0,0,.8) 1px 1px 0;}
+@media screen and (max-width:640px){#slider .widget-content{display:none}}
+</style>
+</head>
+<body>
+<script src='https://arleth-desz.blogspot.co.id/feeds/posts/default?alt=json-in-script&callback=relpostimgcuplik&max-results=50' type='text/javascript'></script>
+<div id='random-post-container'>
+<ul class='carousel' data-flickity="{&quot;autoPlay&quot;:1500,&quot;wrapAround&quot;:true}">
+<script type='text/javascript'>/*//<![CDATA[*/
+artikelterkait();
+$('li.carousel-cell img').each(function(){$(this).attr('src',$(this).attr('src').replace(/\/s[0-9]+(\-c)?\//,'/w130-h180-c/'))});
+/*//]]>*/</script>
+</ul>
+</div>
+</body>
+</HTML>
