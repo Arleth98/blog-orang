@@ -1,4 +1,4 @@
-/*
+/**
  * RECENT POST vTicker BLOGGER - Arleth98
  * ---------------------------------------------------
  * vTicker 1.21 http://richhollis.github.com/vticker/
